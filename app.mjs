@@ -86,7 +86,7 @@ app.get("/healthz", (_, res) => {
 });
 
 // health check 2
-app.get("/healthz2", (_, res) => {
+app.get("/reading-list/healthz2", (_, res) => {
   return res.sendStatus(201);
 });
 
