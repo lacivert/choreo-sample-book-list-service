@@ -81,13 +81,8 @@ app.delete("/reading-list/books/:uuid", (req, res) => {
 });
 
 // health check
-app.get("/healthz", (_, res) => {
+app.get("/reading-list//healthz", (_, res) => {
   return res.sendStatus(200);
-});
-
-// health check 2
-app.get("/reading-list/healthz2", (_, res) => {
-  return res.sendStatus(201);
 });
 
 app.use((err, _req, res, next) => {
