@@ -85,6 +85,11 @@ app.get("/healthz", (_, res) => {
   return res.sendStatus(200);
 });
 
+// health check 2
+app.get("/healthz2", (_, res) => {
+  return res.sendStatus(201);
+});
+
 app.use((err, _req, res, next) => {
   if (res.headersSent) {
     return next(err);
