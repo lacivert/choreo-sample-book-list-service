@@ -6,6 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// hello check
+app.get("/reading-list//hello", (_, res) => {
+  return res.sendStatus(200).send("Hello, World!");
+});
+
 // add a book - request body should contain a title, status and an author
 app.post("/reading-list/books", (req, res) => {
   const { title, author, status } = req.body;

@@ -111,6 +111,14 @@ paths:
           application/json:
             schema:
               $ref: "#/components/schemas/Status"
+  /hello:
+    summary: Hello World endpoint
+    get:
+      summary: Hello World
+      operationId: HelloWorld
+      responses:
+        "200":
+          description: Hello World response
   /healthz:
     summary: Healthcheck endpoint
     get:
