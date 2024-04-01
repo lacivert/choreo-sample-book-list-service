@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // hello check
-app.get("/reading-list//hello", (_, res) => {
+app.get("/reading-list/hello", (_, res) => {
   return res.sendStatus(200).send("Hello, World!");
 });
 
