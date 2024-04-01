@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // hello check
 app.get("/reading-list/hello", (_, res) => {
-  return res.sendStatus(200).send("Hello, World!");
+  return res.send("Hello, World!");
 });
 
 // add a book - request body should contain a title, status and an author
@@ -86,7 +86,7 @@ app.delete("/reading-list/books/:uuid", (req, res) => {
 });
 
 // health check
-app.get("/reading-list//healthz", (_, res) => {
+app.get("/reading-list/healthz", (_, res) => {
   return res.sendStatus(200);
 });
 
